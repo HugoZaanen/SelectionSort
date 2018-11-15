@@ -26,6 +26,7 @@ namespace SelectionSort
 
             Console.WriteLine("Sorted array:");
             Console.WriteLine(string.Join(" ", data) + "\n");
+            Console.Read();
         }
 
         //sort array using selection sort
@@ -61,12 +62,12 @@ namespace SelectionSort
         //display a pass of the algorithm
         public static void PrintPass(int[] values, int pass, int index)
         {
-            Console.Write($"after pass {pass}");
+            Console.Write($"after pass {pass}\n");
 
             //output elements through the selected item
             for(var i = 0; i < index;++i)
             {
-                Console.WriteLine($"{values[i]} ");
+                Console.Write($"{values[i]} ");
             }
 
             Console.Write($"{values[index]}* ");//indicate swap
